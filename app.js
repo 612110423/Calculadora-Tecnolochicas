@@ -1,0 +1,19 @@
+let boton = document.getElementById('sumar');
+//let boton1 = document.getElementById('resta');
+let respuesta= document.getElementById('respuesta');
+
+boton.addEventListener('click', hacersuma);
+//boton.addEventListener('click', hacerresta);
+
+function hacersuma(){
+    let n1 = parseFloat(document.getElementById('n1').value);
+    let n2 = parseFloat(document.getElementById('n2').value);
+    let n3 = n1+n2;
+    respuesta.innerHTML= `El resultado de la suma es: ${n3}` ;
+}
+//function hacerresta(){
+    //let n1 = parseFloat(document.getElementById('n1').value);
+    //let n2 = parseFloat(document.getElementById('n2').value);
+    //let n3 = n1-n2;
+    //respuesta.innerHTML= `El resultado de la resta es: ${n3}` ;
+//}
